@@ -17,11 +17,7 @@ app.use((req, res, next) => {
 });
 
 // Middlewares
-app.use(cors({
-  origin: [
-    "https://doctor-appointment-frontend-mocha.vercel.app/doctors"
-  ]
-}))
+app.use(cors())
 app.use(express.json())
 
 // Api endpoints
